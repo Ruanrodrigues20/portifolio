@@ -1,0 +1,123 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e1e; /* Fundo mais suave, menos preto */
+    color: #fff; /* Texto branco */
+}
+
+h1, h2, h3 {
+    color: #fff; /* Títulos brancos */
+}
+
+a {
+    text-decoration: none;
+    color: #00FF00; /* Verde claro */
+}
+
+a:hover {
+    color: #00CC00; /* Verde mais escuro no hover */
+}
+
+/* Header Styles */
+header {
+    background-color: #333; /* Cor de fundo do cabeçalho */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: #fff;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ffdd57; /* Amarelo claro para hover */
+}
+
+/* Main Section Styles */
+main {
+    padding: 40px 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #00FF00; /* Verde claro para os títulos das seções */
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* Contact Section */
+#contact a {
+    margin: 0 10px;
+}
+
+#contact img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+#contact img:hover {
+    transform: scale(1.1);
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333; /* Fundo escuro no rodapé */
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #contact a {
+        margin: 10px 0;
+    }
+}
+
+/* Estilo para itens em negrito (verde claro) */
+strong {
+    color: #00FF00; /* Verde claro para texto em negrito */
+}
