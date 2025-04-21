@@ -139,13 +139,44 @@ strong {
   }
   
   /* No celular, quebra para uma imagem embaixo da outra */
-  @media (max-width: 768px) {
-    .img-container {
-      flex-direction: column;
-    }
-  
-    .img-container img {
-      max-width: 100%;
-    }
-  }
-  
+@media (max-width: 768px) {
+.img-container {
+    flex-direction: column;
+}
+
+.img-container img {
+    max-width: 100%;
+}
+}
+
+.menu-links {
+display: none; /* Escondido por padrão */
+margin-top: 10px;
+}
+
+.menu-links ul {
+list-style: none;
+padding: 0;
+}
+
+.menu-links li {
+margin: 5px 0;
+}
+
+.menu-links a {
+text-decoration: none;
+color: #333;
+font-weight: bold;
+}
+
+.menu-button {
+background-color: transparent;
+border: none;
+font-size: 24px;
+cursor: pointer;
+}
+
+/* Quando ativo, mostra o menu */
+.menu-links.active {
+display: block;
+}
