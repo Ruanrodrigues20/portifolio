@@ -105,15 +105,39 @@ footer p {
     margin: 0;
 }
 
+/* Menu Button (Hamburguer) */
+.menu-button {
+    display: none; /* Inicialmente o botão está oculto */
+    font-size: 28px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: green; /* Cor do ícone do botão */
+}
+
+/* Menu links (oculto no mobile até ser ativado) */
+.menu-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
     nav ul {
+        display: none; /* Oculta os links no mobile */
         flex-direction: column;
         align-items: center;
+        gap: 10px;
     }
 
-    #contact a {
-        margin: 10px 0;
+    #menu-toggle {
+        display: block; /* Exibe o botão de menu no mobile */
+    }
+
+    .menu-links.active {
+        display: flex; /* Exibe o menu ao clicar no botão */
     }
 }
 
@@ -122,61 +146,29 @@ strong {
     color: #00FF00; /* Verde claro para texto em negrito */
 }
 
-
+/* Imagens responsivas */
 .img-container {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     margin-top: 20px;
-  }
-  
-  .img-container img {
+}
+
+.img-container img {
     width: 100%;
     max-width: 300px; /* controla o tamanho das imagens */
     height: auto;
     border-radius: 6px;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
-  }
-  
-  /* No celular, quebra para uma imagem embaixo da outra */
+}
+
+/* No celular, quebra para uma imagem embaixo da outra */
 @media (max-width: 768px) {
-.img-container {
-    flex-direction: column;
-}
+    .img-container {
+        flex-direction: column;
+    }
 
-.img-container img {
-    max-width: 100%;
-}
-}
-
-.menu-links {
-display: none; /* Escondido por padrão */
-margin-top: 10px;
-}
-
-.menu-links ul {
-list-style: none;
-padding: 0;
-}
-
-.menu-links li {
-margin: 5px 0;
-}
-
-.menu-links a {
-text-decoration: none;
-color: #333;
-font-weight: bold;
-}
-
-.menu-button {
-background-color: transparent;
-border: none;
-font-size: 24px;
-cursor: pointer;
-}
-
-/* Quando ativo, mostra o menu */
-.menu-links.active {
-display: block;
+    .img-container img {
+        max-width: 100%;
+    }
 }
