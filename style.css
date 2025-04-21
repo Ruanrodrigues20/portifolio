@@ -115,13 +115,15 @@ footer p {
     color: green; /* Cor do ícone do botão */
 }
 
-/* Menu links (oculto no mobile até ser ativado) */
+/* Menu links (visíveis no desktop e ocultos no mobile até ser ativado) */
 .menu-links {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+    display: flex; /* Exibe os links em linha */
+    flex-direction: row; /* Mantém os links em uma linha */
+    justify-content: center; /* Centraliza os links horizontalmente */
+    align-items: center; /* Alinha os itens verticalmente */
+    gap: 20px; /* Espaçamento entre os links */
 }
+
 
 /* Responsive Styles */
 @media (max-width: 768px) {
