@@ -121,3 +121,31 @@ footer p {
 strong {
     color: #00FF00; /* Verde claro para texto em negrito */
 }
+
+
+.img-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .img-container img {
+    width: 100%;
+    max-width: 300px; /* controla o tamanho das imagens */
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* No celular, quebra para uma imagem embaixo da outra */
+  @media (max-width: 768px) {
+    .img-container {
+      flex-direction: column;
+    }
+  
+    .img-container img {
+      max-width: 100%;
+    }
+  }
+  
